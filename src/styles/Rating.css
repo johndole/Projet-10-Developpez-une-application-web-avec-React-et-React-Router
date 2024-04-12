@@ -1,0 +1,18 @@
+.rating {
+    display: flex;
+    font-size: 36px; /* Set the font size of the stars */
+    flex-wrap: nowrap;
+  }
+  
+  .filled {
+    display: flex;
+    align-items: flex-end;
+    color: #FF6060; 
+  }
+  
+  .empty {
+    display: flex;
+    align-items: flex-end;
+    color: #E3E3E3; 
+  }
+  
