@@ -1,0 +1,34 @@
+.flat-cards__container{
+    background-color: aliceblue;
+    margin-top: 20px;
+    padding: 50px;
+    border-radius: 20px;
+}
+
+
+.flat-list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 50px;
+}
+
+.flat-card{
+    width: 340px;
+    height: 340px;
+    border-radius: 10px;
+    background-color: #cc2828;
+}
+
+.flat-card__cover img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px 10px  0 0;
+}
+
+.flat-card__title{
+ margin-left: 10px;
+ width: 250px;
+}
