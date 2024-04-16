@@ -19,3 +19,13 @@
     gap: 20px;
 
 }
+nav a {
+  font-size: 24px;
+  font-weight: 500;
+  text-decoration: inherit;
+  color: black;
+}
+nav a:hover {
+  color: black;
+  border-bottom: black 2px solid;
+}

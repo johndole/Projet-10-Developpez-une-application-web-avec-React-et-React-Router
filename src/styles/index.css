@@ -13,17 +13,6 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-a {
-  font-size: 24px;
-  font-weight: 500;
-  text-decoration: inherit;
-  color: black;
-}
-a:hover {
-  color: black;
-  border-bottom: black 2px solid;
-}
-
 
 body {
   margin: 0;
