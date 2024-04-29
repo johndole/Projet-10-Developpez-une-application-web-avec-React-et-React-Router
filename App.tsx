@@ -1,5 +1,5 @@
 import Header from "./src/layers/Header";
-import Body from "./src/pages/Home";
+import Home from "./src/pages/Home";
 import Footer from "./src/layers/Footer";
 import FlatPage from "./src/pages/FlatPage";
 import About from "./src/pages/About";
@@ -11,7 +11,7 @@ function App() {
     <BrowserRouter>
       <Header />
       <Routes>
-        <Route path="/" element={<Body />} />{" "}
+        <Route path="/" element={<Home />} />{" "}
         <Route path="/flat/:id" element={<FlatPage />} />{" "}
         <Route path="/a-propos" element={<About />} />{" "}
         <Route path="*" element={<NotFound />} />

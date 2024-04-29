@@ -32,6 +32,7 @@ function FlatPage() {
           rating={parseInt(flat.rating)}
         />
       </div>
+
       <div className="flat-details__container">
         {/* Dropdown for equipment */}
         <Dropdown

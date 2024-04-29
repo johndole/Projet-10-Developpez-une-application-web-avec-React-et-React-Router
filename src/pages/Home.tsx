@@ -6,9 +6,8 @@ function Home() {
     <div className="home">
       <div className="home-hero">
         <h2 className="home-title">
-          {" "}
-          Chez vous,{" "}
-          <span className="home-title__second-part">partout et ailleurs</span>
+          Chez vous,
+          <span className="home-title__second-part"> partout et ailleurs</span>
         </h2>
         <img className="hero-img" src="/src/assets/hero-img.jpg" alt="logo" />
       </div>
