@@ -1,5 +1,5 @@
 import Dropdown from "../components/Dropdown";
-import "../styles/About.css";
+import "./About.css";
 
 function About() {
   return (

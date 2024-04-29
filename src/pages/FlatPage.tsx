@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import "../styles/FlatPage.css";
+import "./FlatPage.css";
 import Dropdown from "../components/Dropdown";
 import HostInfo from "../components/HostInfo";
 import Carousel from "../components/Carousel"; // Import the Carousel component

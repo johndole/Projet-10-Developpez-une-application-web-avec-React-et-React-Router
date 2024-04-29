@@ -12,11 +12,8 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Body />} />{" "}
-        {/* Render Body component for the root path */}
         <Route path="/flat/:id" element={<FlatPage />} />{" "}
-        {/* Render FlatPage component for /flat/:id */}
         <Route path="/a-propos" element={<About />} />{" "}
-        {/* Render Body component for /a-propos */}
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
