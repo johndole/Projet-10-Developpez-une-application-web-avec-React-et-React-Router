@@ -1,23 +1,21 @@
 .header {
-    text-align: right;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    align-items: center;
-    margin: 30px 100px 30px 100px
-
+  text-align: right;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  margin: 30px 100px;
 }
 
 .logo {
-    height: 4em;
+  height: 4em;
 }
 
-.nav{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 20px;
-
+.nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
 }
 nav a {
   font-size: 24px;
@@ -29,4 +27,17 @@ nav a {
 nav a:hover {
   color: black;
   border-bottom: black 2px solid;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    margin: 30px 20px;
+  }
+  .logo {
+    height: 2.5em;
+  }
+
+  .nav a {
+    font-size: 16px;
+  }
 }

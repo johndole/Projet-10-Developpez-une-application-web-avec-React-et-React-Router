@@ -1,0 +1,38 @@
+.not-found {
+  text-align: center;
+  margin: 100px 0;
+}
+
+.not-found h1 {
+  font-size: 288px;
+  font-weight: 700;
+  color: #ff6060;
+  margin: 100px 0;
+}
+
+.not-found p {
+  font-size: 36px;
+  font-weight: 500;
+  color: #ff6060;
+  margin: 100px 0;
+}
+
+.not-found a {
+  font-size: 18px;
+  font-weight: 500;
+  color: black;
+  text-decoration: none;
+  margin: 100px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .not-found h1 {
+    font-size: 144px;
+  }
+  .not-found p {
+    font-size: 24px;
+  }
+  .not-found a {
+    font-size: 16px;
+  }
+}

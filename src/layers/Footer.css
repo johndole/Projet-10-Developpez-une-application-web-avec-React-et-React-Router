@@ -16,3 +16,17 @@
   font-size: 24px;
   font-weight: 500;
 }
+
+@media screen and (max-width: 768px) {
+  .footer {
+    justify-content: center;
+  }
+  .footer p {
+    font-size: 16px;
+    text-align: center;
+    width: 40%;
+  }
+  .footer img {
+    height: 40px;
+  }
+}

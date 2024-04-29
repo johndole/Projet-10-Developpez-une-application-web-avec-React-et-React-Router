@@ -1,18 +1,18 @@
-
-import { useParams } from 'react-router-dom';
-import '../styles/FlatPage.css';
-import Dropdown from '../components/Dropdown';
-import HostInfo from '../components/HostInfo';
-import Carousel from '../components/Carousel'; // Import the Carousel component
-import flatsData from '../data/logements.json';
-import Tags from '../components/Tags';
+import { useParams } from "react-router-dom";
+import "../styles/FlatPage.css";
+import Dropdown from "../components/Dropdown";
+import HostInfo from "../components/HostInfo";
+import Carousel from "../components/Carousel"; // Import the Carousel component
+import flatsData from "../data/logements.json";
+import Tags from "../components/Tags";
+import NotFound from "./NotFound";
 
 function FlatPage() {
   const { id } = useParams<{ id: string }>();
   const flat = flatsData.find((flat) => flat.id === id);
 
   if (!flat) {
-    return <div>Flat not found!</div>;
+    return <NotFound />;
   }
 
   return (
@@ -26,13 +26,22 @@ function FlatPage() {
           <p>{flat.location}</p>
           <Tags tags={flat.tags} />
         </div>
-        <HostInfo name={flat.host.name} picture={flat.host.picture} rating={parseInt(flat.rating)} />
+        <HostInfo
+          name={flat.host.name}
+          picture={flat.host.picture}
+          rating={parseInt(flat.rating)}
+        />
       </div>
       <div className="flat-details__container">
         {/* Dropdown for equipment */}
-        <Dropdown style={{ width: '50%' }} title="Equipments" content={flat.equipments.map((item: string, index: number) => <p key={index}>{item}</p>)} />
+        <Dropdown
+          title="Equipments"
+          content={flat.equipments.map((item: string, index: number) => (
+            <p key={index}>{item}</p>
+          ))}
+        />
         {/* Dropdown for description */}
-        <Dropdown style={{ width: '50%' }}  title="Description" content={<p>{flat.description}</p>} />
+        <Dropdown title="Description" content={<p>{flat.description}</p>} />
       </div>
     </div>
   );
