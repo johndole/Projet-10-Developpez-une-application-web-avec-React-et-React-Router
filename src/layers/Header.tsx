@@ -1,17 +1,28 @@
+import { Link, useLocation } from "react-router-dom";
 import "./Header.css";
 
 function Header() {
+  // Récupère l'URL actuelle
+  const location = useLocation();
+
   return (
     <div className="header">
-      <a href="/">
+      <Link to="/">
         <img className="logo" src="/src/assets/logo.png" alt="logo" />
-      </a>
+      </Link>
       <nav className="nav">
         <li>
-          <a href="/">Accueil</a>
+          <Link to="/" className={location.pathname === "/" ? "active" : ""}>
+            Accueil
+          </Link>
         </li>
         <li>
-          <a href="/a-propos">A propos</a>
+          <Link
+            to="/a-propos"
+            className={location.pathname === "/a-propos" ? "active" : ""}
+          >
+            A propos
+          </Link>
         </li>
       </nav>
     </div>
